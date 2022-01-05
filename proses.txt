@@ -1,0 +1,15 @@
+header DONE
+footer DONE
+content DONE
+design login register etc
+
+username dan password disimpan di dalam local storage
+ketika user login jika berhasil maka halaman learn di tampilkan ...lalu munculkan alert('login sukses) dan data user ditampilkan dihalaman footer jika login gagal , maka tidak akan muncul  lalu munculkan pesan login gagal
+
+login : saat user login maka akan dicek dulu di local storage apakah ada data atasnama username ini dan juga password ini jika cocok maka username dan password akan dipakai jika cocok maka munculkan navigasi learn's di navbar atas
+
+catatan penting : username dan password akan tersimpan berdasarkan terakhir kali user meregister akunnya  
+
+logout:jika di logout maka nav home di navigasi akan muncul sehingga user bisa menekan home untuk kembali ke halaman login
+
+kendala:untuk ukuran layar kurang dari 1024px bagian navigasi home dan juga learn sulit untuk di hide 

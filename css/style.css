@@ -1,0 +1,352 @@
+/* device */
+
+/* phone */
+@media (max-width:1024px) {
+    *{
+        box-sizing: border-box;
+        font-size: 2%;
+        font-family: sans-serif;
+    }
+    /* button for navbar is invisible click sakura blosom to make navbar visible*/
+    
+    label:first-child{
+        display: contents;
+    }
+    .bg-header{
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nav a{
+        position: fixed;
+        left: -100%;
+        /* animate the navbar on phone device */
+        transition: all .5s;
+        animation-name: fade;
+    }
+    #navbar-link{
+        
+    }
+    .btn{
+        width: 100%;
+        font-size: 30px;
+    }
+    .nav{
+        list-style: none;
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav a{
+        display: flex;
+        margin-top: 30px;
+    }
+    .nav li a{
+        transition: all .5s;
+    }
+    #btn-bars:checked ~ .nav a{
+        position: relative;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .mt-2:nth-child(){
+        margin-top: 20px;
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    .footer-text{
+        width: 100%;
+        font-size: 0.25em;
+    }
+    .d-none{
+        display: none;
+    }  
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.25vw !important;
+        padding:0.25vw;
+    }
+}/* end of media query */
+
+
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    text-transform: capitalize;
+}
+label:first-child{
+    position: fixed;
+    right: 100%;
+    font-size: 40px;
+    float: right;
+    margin:auto 20px;
+}
+ .fa-bars{
+     cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    color: ivory;
+}
+#btn-bars{
+    display: none;
+}
+.bg-header{
+    background-image: url(../img/sakura-5248955_1920.jpg);
+    padding: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    list-style: none;
+    margin: 20px ;
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
+}
+.nav-item{
+    text-transform: capitalize;
+}
+.nav-link{
+    text-decoration: none;
+    color: ivory;
+}
+.nav-link:hover{
+    color: pink;
+    transition: all 1s;
+}
+.navbar-brand{
+    color: whitesmoke;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.body{
+    background-color: black;
+    opacity:0.9;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 10px 12px;
+}
+a:hover{
+    color: rgb(120, 120, 245);
+    transition: ease-out 1s;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4vw !important;
+    padding:8vw;
+}
+.container-bg{
+    background-image: url(../img/woman-5450043_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+.container-text{
+    font-size: 3vw;
+}
+/* form */
+.form{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-left: 40%;
+}
+/* margin */
+.m-start{
+   margin-right: 60%;
+}
+/* navbar's */
+#check{
+   display: none;
+}
+#btn-check{
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+}
+#nav-brand{
+    color: whitesmoke;
+    line-height: 10px;
+    margin-right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+}
+/* button */
+.btn-hijau{
+    background-color: rgb(68, 192, 10);
+    color: whitesmoke;
+    border:rgb(68, 192, 10);
+}
+.btn-merah{
+    background-color: rgb(255, 27, 27);
+    color: whitesmoke;
+    border:rgb(255, 27, 27);
+}
+.btn:hover{
+    opacity: 0.6;
+}
+.btn{
+    cursor: pointer;
+    padding: 1%;
+    border-radius:10%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    overflow: visible;
+    transition: ease-out 0.5s;
+}
+/* footer */
+footer{
+    background:url(../img/sakura-5248955_1920.jpg);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    padding:8vw;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10%;
+}
+.footer-title{
+    text-align: center;
+}
+.footer-left ul li,.footer-middle ul li,.footer-right ul li{
+    margin: 0.25rem;
+    letter-spacing: 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-text{
+    display: flex;
+    width: 40%;
+    text-align: start;
+    height: auto;
+    align-items:flex-start;
+    height: 20%;
+}
+.footer-bottom{
+    margin: 20% 10%;
+    background-color: rgba(59, 10, 59, 0.25);
+}
+.footer-right{
+    margin-right: 20%;
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+}
+.footer ul{
+    /* display: flex;
+    flex-direction: row; */
+}
+/* animate */
+.animate-fade{
+    animation-name: fade;
+    animation-duration: 3s;
+    
+}
+.animate-left{
+    animation-name: left;
+    animation-duration: 3s;
+}
+@keyframes left{
+    from{
+        margin-right: 1rem;
+        opacity: 0;
+    }
+    to{
+        margin-left: 1rem;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* colors */
+.btn-biru{
+    background-color: rgb(23, 119, 230);
+    color: white;
+}
+.biru{
+    color: rgb(30, 30, 243);
+}
+.biru-muda{
+    color: rgba(90, 162, 230, 0.788);
+}
+.hijau{
+    color: green;
+}
+.putih{
+    color: ivory;
+}
+.hitam{
+    color: black;
+}
+.pink{
+    color: palevioletred;
+}
+.kuning{
+    color: rgb(196, 233, 51);
+}
+.bg-biru{
+    background: rgba(28, 28, 233, 0.25);
+}
+.bg-putih{
+    background-color: whitesmoke;
+}
+
+/* icon and utilities */
+#jam{
+   text-align: end;
+   margin-right: 5vw;
+}
+.d-none{
+    display: none;
+}
+.icon{
+    font-size: 2.5rem;
+}
+.opacity-filter-bg{
+    /* position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    position:relative;
+    background-color: rgba(0, 150, 0, 0.2);
+    display:flex;
+    justify-content:center;
+}
+.btn-icon{
+    width: 100%;
+    font-size: 20px;
+    border-radius:0.25rem;
+    text-align: center;
+}
+.mt-2{
+    width: 100%;
+    margin-top: 0.25rem;
+}
+/* img */
+.img-jepang img{
+    width: 100%;
+}
