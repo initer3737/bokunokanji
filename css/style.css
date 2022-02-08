@@ -65,12 +65,6 @@
     .d-none{
         display: none;
     }  
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0.25vw !important;
-        padding:0.25vw;
-    }
 }/* end of media query */
 
 
@@ -144,7 +138,7 @@ a:hover{
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin: 4vw !important;
+    justify-content: center;
     padding:8vw;
 }
 .container-bg{
@@ -161,7 +155,7 @@ a:hover{
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    margin-left: 40%;
+    justify-content: center;
 }
 /* margin */
 .m-start{
@@ -245,6 +239,10 @@ footer{
 }
 .footer-right{
     margin-right: 20%;
+}
+.footer-left ul li a i:hover{
+    color: palevioletred;
+    transition: ease-in 0.3s;
 }
 .footer-link{
     display: flex;
@@ -338,7 +336,7 @@ footer{
 }
 .btn-icon{
     width: 100%;
-    font-size: 20px;
+    font-size: 20vw;
     border-radius:0.25rem;
     text-align: center;
 }

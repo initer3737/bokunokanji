@@ -9,9 +9,37 @@
     <link rel="shortcut icon" href="img/favicon" type="image/x-icon">
         <!-- font awesome version v5.15.4 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        header{
+            margin-top: 2vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        .filter{
+            width: 100vw;
+            height: 100%;
+            background-color: black;
+            opacity: 0.3;
+            position: absolute;
+
+        }
+        .teks-container{
+            position: absolute;
+            z-index: 11;
+            background-color: palevioletred;
+            color: white;
+            padding: 7%;
+            border-radius: 10px;
+            box-shadow: 0.5rem 0.6rem rgb(49, 25, 47);
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body class="animate-left body">
-    <header class="bg-header">
+    <nav class="bg-header">
         <label for="btn-bars" class="bar-icon">
             <i class="fas fa-bars"></i>
         </label>
@@ -30,8 +58,18 @@
                 <a href="pages/learn.html" class="nav-link d-none" id="navbar-link" onclick="auth()">Learn's</a>
             </li>
         </ul>
+    </nav>
+    <header>
+        <video src="video/Cherry - 35631.mp4" autoplay muted loop></video>
+        <div class="filter"></div>
+        <div class="teks-container">
+           <center>
+            <h1>Boku No Kanji</h1>
+           </center>
+            <h2>Belajar Mengenal Huruf Jepang</h2>
+        </div>
     </header>
-        <section class="container">
+        <section class="container"> 
             <div class="form">
                 <form>
                     <div class="mt-2">
